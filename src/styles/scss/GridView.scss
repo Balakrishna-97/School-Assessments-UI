@@ -1,0 +1,19 @@
+@import 'config';
+
+.wrapper {
+	background-color: $secondary-background-color;
+	position: relative;
+}
+
+.grid-box {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	grid-template-rows: auto;
+	grid-gap: 1%;
+	padding: 1%;
+}
+
+.header {
+	margin-left: 50px;
+	margin-top: 30px;
+}

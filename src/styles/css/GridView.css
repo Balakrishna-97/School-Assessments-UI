@@ -1,0 +1,20 @@
+.wrapper {
+  background-color: #e1e4e4;
+  position: relative;
+}
+
+.grid-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 1%;
+  padding: 1%;
+}
+
+.header {
+  margin-left: 50px;
+  margin-top: 30px;
+}

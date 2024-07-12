@@ -1,0 +1,49 @@
+.fundamental-container svg {
+  fill: white !important;
+}
+
+.fundamental-title {
+  margin-top: 10px;
+  font-size: 25px;
+  line-height: normal;
+}
+
+.title-navigation {
+  color: white !important;
+  position: relative;
+  top: 6px;
+  margin: 0 5px;
+  height: 20px !important;
+  width: 18px !important;
+}
+
+.sub-title {
+  font-size: small;
+  line-height: normal;
+}
+
+.right-icons button {
+  margin-right: 20px !important;
+}
+
+.right-icons .search-box {
+  width: 200px !important;
+  height: 35px !important;
+  margin-right: 10px !important;
+  color: white !important;
+}
+
+.right-icons .search-box input[type="text"] {
+  color: white !important;
+}
+
+.right-icons .search-box hr {
+  border-color: white !important;
+}
+
+@media (max-width: 768px) {
+  .fundamental-title {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}

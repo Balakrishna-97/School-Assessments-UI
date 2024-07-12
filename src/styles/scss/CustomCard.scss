@@ -1,0 +1,35 @@
+@import 'config';
+
+.card-container {
+	margin: 1% 0;
+	width: 180px;
+	svg {
+		fill: $primary-color !important;
+	}
+}
+
+.card-body {
+	padding-bottom: 0px;
+	position: relative;
+
+	img {
+		height: 200px;
+		width: 100px;
+	}
+}
+
+.icon-menu {
+	position: absolute !important;
+	top: 0px;
+	right: 0px;
+	border-top-right-radius: 7%;
+	border-bottom-left-radius: 7%;
+	background-color: #100f0f99;
+}
+
+@media only screen and (max-width: 768px) {
+	.icon-menu {
+		height: 42px;
+		width: 42px;
+	}
+}

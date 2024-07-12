@@ -1,0 +1,186 @@
+@import 'config';
+
+.header {
+	margin: 20px;
+	font-size: 15px;
+
+	&-right {
+		float: right;
+		font-weight: 600;
+
+		.navigation {
+			fill: #9e9b9b !important;
+		}
+		button {
+			float: right;
+			padding: 0 5px !important;
+			height: 24px !important;
+			width: 24px !important;
+		}
+	}
+	&-left {
+		font-weight: 500;
+	}
+}
+
+.react-grid-Container {
+	width: 100%;
+}
+
+.react-grid-Grid {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	background: $secondary-background-color;
+	border: none;
+}
+
+.react-grid-Header {
+	left: 60%;
+	outline: none;
+	box-shadow: none;
+	background: $secondary-background-color;
+}
+
+.react-grid-HeaderCell {
+	position: absolute;
+	width: 140px;
+	border: none;
+	font-weight: 500;
+	background: $secondary-background-color;
+}
+.react-grid-Main {
+	outline: 0px;
+	background: $secondary-background-color;
+	border: none;
+}
+.react-grid-Canvas {
+	background: $secondary-background-color;
+}
+.panel {
+	margin: 10px;
+}
+.panel-body {
+	padding: 0px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-content: flex-start;
+	svg {
+		fill: $primary-color !important;
+	}
+}
+.img-container {
+	position: relative;
+	float: left;
+}
+.panel-image {
+	display: block;
+	height: 100px;
+	width: 100px;
+}
+.panel-details {
+	padding-left: 20px;
+	align-self: center;
+}
+.panel-radio {
+	position: absolute;
+	align-self: center;
+	right: 11%;
+
+	.inputGroup {
+		display: inline;
+
+		label {
+			margin-left: 125px;
+			display: inline;
+			position: relative;
+		}
+		label:before {
+			border-radius: 50%;
+			content: '';
+			background-color: white;
+			position: absolute;
+			z-index: -1;
+		}
+		label:after {
+			width: 32px;
+			height: 32px;
+			content: '';
+			border: 2px solid #d1d7dc;
+			background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E");
+			background-position: 2px 3px;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			cursor: pointer;
+			-webkit-transition: all 200ms ease-in;
+			-o-transition: all 200ms ease-in;
+			transition: all 200ms ease-in;
+		}
+
+		input:checked ~ label {
+			color: #fff;
+
+			&:before {
+				transform: translate(-50%, -50%) scale3d(56, 56, 1);
+				opacity: 1;
+			}
+
+			&:after {
+				background-color: #00ff22;
+				border-color: #00ff22;
+			}
+		}
+
+		input {
+			width: 32px;
+			height: 32px;
+			position: absolute;
+			right: 30px;
+			cursor: pointer;
+			visibility: hidden;
+		}
+	}
+}
+
+.list-icon-menu {
+	position: absolute !important;
+	top: 0;
+	left: 70px;
+	height: 30px;
+	width: 30px;
+	border-top-right-radius: 10%;
+	border-bottom-left-radius: 10%;
+	background-color: #100f0f99;
+}
+
+.morevert-icon {
+	position: absolute;
+	top: 1px;
+	left: 2px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.panel-radio label::after {
+		right: 0;
+	}
+
+	.react-grid-Header {
+		left: 44%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.panel-radio {
+		right: 6%;
+		label {
+			margin-left: 130px !important;
+		}
+	}
+
+	.react-grid-Header {
+		left: 32%;
+	}
+}
